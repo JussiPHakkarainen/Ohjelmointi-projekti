@@ -1,1 +1,1 @@
-Print ("ok")
+print ("ok")
