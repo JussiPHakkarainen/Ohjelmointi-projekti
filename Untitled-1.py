@@ -1,1 +1,1 @@
-print ("ok")
+print ("ok mutta saattaa hajota")
