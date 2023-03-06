@@ -56,4 +56,4 @@ elif choice == 3:
     else:
         print("The dwarf was not impressed by your words and robbed you anyway.")
 else:
-    print("Invalid choice, please enter a number between 1 and 3.")
+    print("Invalid choice, you broke the game")
