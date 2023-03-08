@@ -1,5 +1,5 @@
 import random
-print("---- \nYou are a young adventurer looking to help your village by slaying a dragon in a nearby castle you have nothing but a sword wits and bravery on you  \n----")
+print("---- \nYou are a young adventurer looking to help your village by slaying a dragon in a nearby castle you have nothing but a sword, wits and bravery on to your name  \n----")
 class Character:
     def __init__(self):
         self.name = input("Give your name to make a character: ")
@@ -41,17 +41,19 @@ print("3. Try to talk the dwarf out of it")
 choice = int(input("Enter your choice (1-3): "))
 
 if choice == 1:
-    difficulty = 2
+    difficulty = 5
     if compareStrength(my_character, difficulty):
         print("You successfully defeated the dwarf in combat!")
     else:
         print("The dwarf proved to be too strong for you. Game Over")
+        exit()
 elif choice == 2:
     difficulty = 4
     if compareAgility(my_character, difficulty):
         print("You managed to run circles around the dwarf and escape.")
     else:
         print("The dwarf caught up with you and robbed you anyway. Game Over")
+        exit()
 elif choice == 3:
     difficulty = 6
     if compareIntelligence(my_character, difficulty):
@@ -59,12 +61,13 @@ elif choice == 3:
         stage="pass"
     else:
         print("The dwarf was not impressed by your words and robbed you anyway. Game Over")
+        exit()
 else:
     print("Invalid choice, you broke the game")
-#fork in the road TBD
+#fork in the road (if time and motivation)
 
 #final boss fight
-print("---- \nYou arrive inside the dragons castle and he notices your arrival. Brace yourself!")
+print("---- \nYou arrive at the dragons castle and he notices your arrival. Brace yourself!")
 DragonHP=50
 Dragonfriendly = False
 while DragonHP >=0 :
